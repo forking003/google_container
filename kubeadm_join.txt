@@ -1,0 +1,66 @@
+ kubeadm join 192.168.153.135:6443 --token g8xnh4.m0qdqzt138jd3jvv --discovery-token-ca-cert-hash sha256:260697b8920d3744da400383e43d7cd5f445be97631655f041fe63513af5f93d
+ 
+ 
+ [root@k8s_pod1 ~]#  kubeadm join 192.168.153.135:6443 --token g8xnh4.m0qdqzt138jd3jvv --discovery-token-ca-cert-hash sha256:260697b8920d3744da400383e43d7cd5f445be97631655f041fe63513af5f93d
+[preflight] Running pre-flight checks.
+        [WARNING SystemVerification]: docker version is greater than the most recently validated version. Docker version: 17.05.0-ce. Max validated version: 17.03
+        [WARNING Hostname]: hostname "k8s.pod1" could not be reached
+        [WARNING Hostname]: hostname "k8s.pod1" lookup k8s.pod1 on 192.168.153.2:53: no such host
+        [WARNING FileExisting-crictl]: crictl not found in system path
+Suggestion: go get github.com/kubernetes-incubator/cri-tools/cmd/crictl
+[discovery] Trying to connect to API Server "192.168.153.135:6443"
+[discovery] Created cluster-info discovery client, requesting info from "https://192.168.153.135:6443"
+[discovery] Requesting info from "https://192.168.153.135:6443" again to validate TLS against the pinned public key
+[discovery] Cluster info signature and contents are valid and TLS certificate validates against pinned roots, will use API Server "192.168.153.135:6443"
+[discovery] Successfully established connection with API Server "192.168.153.135:6443"
+
+This node has joined the cluster:
+* Certificate signing request was sent to master and a response
+  was received.
+* The Kubelet was informed of the new secure connection details.
+
+Run 'kubectl get nodes' on the master to see this node join the cluster.
+
+
+[root@k8s_pod2 ~]#  kubeadm join 192.168.153.135:6443 --token g8xnh4.m0qdqzt138jd3jvv --discovery-token-ca-cert-hash sha256:260697b8920d3744da400383e43d7cd5f445be97631655f041fe63513af5f93d
+[preflight] Running pre-flight checks.
+        [WARNING SystemVerification]: docker version is greater than the most recently validated version. Docker version: 17.05.0-ce. Max validated version: 17.03
+        [WARNING Hostname]: hostname "k8s.pod2" could not be reached
+        [WARNING Hostname]: hostname "k8s.pod2" lookup k8s.pod2 on 192.168.153.2:53: no such host
+        [WARNING FileExisting-crictl]: crictl not found in system path
+Suggestion: go get github.com/kubernetes-incubator/cri-tools/cmd/crictl
+[discovery] Trying to connect to API Server "192.168.153.135:6443"
+[discovery] Created cluster-info discovery client, requesting info from "https://192.168.153.135:6443"
+[discovery] Requesting info from "https://192.168.153.135:6443" again to validate TLS against the pinned public key
+[discovery] Cluster info signature and contents are valid and TLS certificate validates against pinned roots, will use API Server "192.168.153.135:6443"
+[discovery] Successfully established connection with API Server "192.168.153.135:6443"
+
+This node has joined the cluster:
+* Certificate signing request was sent to master and a response
+  was received.
+* The Kubelet was informed of the new secure connection details.
+
+Run 'kubectl get nodes' on the master to see this node join the cluster.
+
+
+
+
+
+
+
+
+kubeadm join 192.168.153.135:6443 --token bo30j6.80wn72j797f1xbva --discovery-token-ca-cert-hash sha256:0d9f203ea08c2520b1e9346c6bab04352242a5d094354830b683015045d5f9d2
+
+导出镜像,下载太慢.
+
+
+
+
+
+
+
+
+
+
+
+

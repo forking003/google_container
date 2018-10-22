@@ -1,0 +1,2 @@
+FROM gcr.io/google_containers/kube-proxy:latest
+MAINTAINER firedesign@126.com
